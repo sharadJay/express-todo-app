@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="jquery.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>What are things you need to do today</h1>
+    </div>
+    <div>
+        <%- include partials/task.ejs %>
+    </div>
+    <div class="row">
+        <form action="/todo" method="post">
+                <input type="text" name="task" placeholder="enter your task here" class="form-control"/>
+                <small id="taskHelp" class="form-text text-muted">Enter a new task</small>
+                <input type="submit" value="Submit" class="btn btn-primary">Add Task</button>
+        </form>
+    </div>
+</div>
+</body>
+<script src="script.js" type="application/javascript"></script>
+</html>

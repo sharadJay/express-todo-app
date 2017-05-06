@@ -1,0 +1,11 @@
+<!--Link for each task text and a cross button to delete it-->
+<% for(var i = 0; i < tasks.length; i++) { %>
+<div class="row">
+    <a href='#'>
+        <span class='task-description'><%= tasks[i] %></span>
+    </a>
+        <a type="button" class="close task-close" aria-label="Close" id="close" data-confirm="Are you sure?"  rel="nofollow">
+            <span aria-hidden="true" data-task="<%= tasks[i] %>" >&times;</span>
+        </a>
+</div>
+<% } %>
