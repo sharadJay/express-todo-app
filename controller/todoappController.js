@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost:27017/todo');
+mongoose.connect('mongodb://test:test@ds055575.mlab.com:55575/todo-data');
 var Schema = mongoose.Schema
 var todo = new Schema({
     task: {type: String, default: ''}
