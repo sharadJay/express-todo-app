@@ -4,7 +4,8 @@
   "description": "A todo app based on expressjs",
   "main": "app.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "start": "node app.js"
   },
   "author": "sharadjay",
   "license": "ISC",
